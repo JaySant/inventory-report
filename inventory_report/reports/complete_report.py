@@ -14,7 +14,7 @@ class CompleteReport(SimpleReport):
             else:
                 companies[company] = 1
 
-        product_counts = "\n".join([
+        product_counts = "".join([
             f"- {company}: {count}\n" for company, count in companies.items()])
 
         return (
