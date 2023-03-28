@@ -6,7 +6,6 @@ from inventory_report.importer.xml_importer import XmlImporter
 
 
 class Inventory:
-    
     @staticmethod
     def verificacao(path: str):
         if path.endswith(".csv"):
