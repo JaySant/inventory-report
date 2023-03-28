@@ -16,7 +16,7 @@ class InventoryRefactor(Iterable):
     def import_data(self, path: str, report_type: str) -> str:
         imported_data = self.importer.import_data(path)
         self.data.extend(imported_data)
-           
+
         if report_type == "simples":
             return SimpleReport.generate(self.data)
         elif report_type == "completo":
